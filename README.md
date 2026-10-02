@@ -102,7 +102,7 @@ Key decisions:
 
 ## 4. Local setup
 
-Requirements: **Node.js 22.12+** (see `.nvmrc`), **npm**, and **Docker** for the local Keycloak.
+Requirements: **Node.js 24+** (see `.nvmrc`), **npm**, and **Docker** for the local Keycloak.
 
 ```bash
 git clone <this repository>
