@@ -1,0 +1,147 @@
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  transition: opacity 0.15s ease;
+}
+
+.updating {
+  opacity: 0.55;
+}
+
+.table th {
+  padding: var(--space-3) var(--space-4);
+  border-bottom: 1px solid var(--color-border);
+  background: #fafbfc;
+  color: var(--color-text-muted);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.table th:first-child {
+  border-top-left-radius: var(--radius-lg);
+}
+
+.table th:last-child {
+  border-top-right-radius: var(--radius-lg);
+}
+
+.table td {
+  padding: var(--space-3) var(--space-4);
+  border-bottom: 1px solid var(--color-border);
+  vertical-align: middle;
+}
+
+.row {
+  position: relative;
+}
+
+.row:last-child td {
+  border-bottom: 0;
+}
+
+.row:hover {
+  background: #f8faff;
+}
+
+.row:focus-within {
+  background: #f0f4ff;
+}
+
+.titleLink {
+  color: var(--color-text);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.titleLink::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+}
+
+.titleLink:focus-visible {
+  outline: none;
+}
+
+.titleLink:focus-visible::after {
+  outline: 3px solid var(--color-focus-ring);
+  outline-offset: -3px;
+}
+
+.id,
+.email {
+  display: block;
+  color: var(--color-text-muted);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+}
+
+.created {
+  white-space: nowrap;
+}
+
+@media (max-width: 1000px) {
+  .categoryCol {
+    display: none;
+  }
+}
+
+@media (max-width: 720px) {
+  .table,
+  .table tbody {
+    display: block;
+  }
+
+  .table thead {
+    display: none;
+  }
+
+  .row {
+    display: grid;
+    grid-template-areas:
+      "request request"
+      "requester status"
+      "created priority";
+    grid-template-columns: 1fr auto;
+    gap: var(--space-2) var(--space-3);
+    padding: var(--space-4);
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .table td {
+    padding: 0;
+    border: 0;
+  }
+
+  .request {
+    grid-area: request;
+  }
+
+  .requester {
+    grid-area: requester;
+    color: var(--color-text-muted);
+  }
+
+  .status {
+    grid-area: status;
+    justify-self: end;
+  }
+
+  .created {
+    grid-area: created;
+    color: var(--color-text-muted);
+    font-size: var(--font-size-sm);
+  }
+
+  .priority {
+    grid-area: priority;
+    justify-self: end;
+  }
+
+  .email {
+    display: none;
+  }
+}

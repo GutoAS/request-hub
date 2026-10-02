@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  /* Surfaces and text */
+  --color-bg: #f5f6f8;
+  --color-surface: #ffffff;
+  --color-text: #1d2330;
+  --color-text-muted: #5c6577;
+  --color-border: #dfe3ea;
+  --color-border-strong: #c9d0db;
+
+  /* Brand */
+  --color-brand: #ef233c;
+  --color-brand-hover: #660708;
+  --color-brand-contrast: #ffffff;
+  --color-header-bg: #780000;
+  --color-header-text: #ede0d4;
+
+  /* Feedback */
+  --color-danger: #c62828;
+  --color-danger-bg: #fdecec;
+  --color-danger-border: #f3b7b7;
+  --color-danger-text: #7a1414;
+  --color-warning-bg: #fff5da;
+  --color-warning-border: #edd08a;
+  --color-warning-text: #5c3d00;
+  --color-focus-ring: #b9ccff;
+
+  /* Request status (text colour + background) */
+  --status-open: #1f5fd1;
+  --status-open-bg: #e6efff;
+  --status-in-progress: #8a5100;
+  --status-in-progress-bg: #fff2d6;
+  --status-resolved: #16692d;
+  --status-resolved-bg: #dcf5e3;
+  --status-closed: #4f5760;
+  --status-closed-bg: #eceef1;
+
+  /* Request priority */
+  --priority-low: #9aa4b2;
+  --priority-medium: #2e90fa;
+  --priority-high: #f79009;
+  --priority-critical: #d92d20;
+
+  /* Spacing scale*/
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+
+  /* Shape and type */
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-pill: 999px;
+  --font-sans: "Roboto", sans-serif;
+  --font-mono: ui-monospace, Consolas, "Courier New", monospace;
+  --font-size-sm: 0.8125rem; /* 13px */
+  --font-size-md: 0.875rem; /* 14px */
+  --font-size-lg: 1.125rem; /* 18px */
+  --font-size-xl: 1.5rem; /* 24px */
+
+  --header-height: 60px;
+  --content-max-width: 1200px;
+}

@@ -1,0 +1,28 @@
+.badge {
+  display: inline-block;
+  padding: 2px 10px;
+  border-radius: var(--radius-pill);
+  font-size: 0.75rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.OPEN {
+  color: var(--status-open);
+  background: var(--status-open-bg);
+}
+
+.IN_PROGRESS {
+  color: var(--status-in-progress);
+  background: var(--status-in-progress-bg);
+}
+
+.RESOLVED {
+  color: var(--status-resolved);
+  background: var(--status-resolved-bg);
+}
+
+.CLOSED {
+  color: var(--status-closed);
+  background: var(--status-closed-bg);
+}

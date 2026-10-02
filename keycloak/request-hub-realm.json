@@ -1,0 +1,42 @@
+{
+  "realm": "request-hub",
+  "displayName": "Request Hub",
+  "enabled": true,
+  "sslRequired": "external",
+  "registrationAllowed": false,
+  "loginWithEmailAllowed": true,
+  "accessTokenLifespan": 300,
+  "ssoSessionIdleTimeout": 1800,
+  "clients": [
+    {
+      "clientId": "request-hub-rh",
+      "name": "Request Hub (RH)",
+      "enabled": true,
+      "publicClient": true,
+      "protocol": "openid-connect",
+      "standardFlowEnabled": true,
+      "implicitFlowEnabled": false,
+      "directAccessGrantsEnabled": false,
+      "serviceAccountsEnabled": false,
+      "redirectUris": ["http://localhost:5173/*"],
+      "webOrigins": ["http://localhost:5173"],
+      "attributes": {
+        "pkce.code.challenge.method": "S256",
+        "post.logout.redirect.uris": "http://localhost:5173/*"
+      }
+    }
+  ],
+  "users": [
+    {
+      "username": "agostinhosoberano",
+      "enabled": true,
+      "email": "soberano@gmail.com",
+      "emailVerified": true,
+      "firstName": "Agostinho",
+      "lastName": "Soberano",
+      "credentials": [
+        { "type": "password", "value": "demo1234", "temporary": false }
+      ]
+    }
+  ]
+}

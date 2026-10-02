@@ -1,0 +1,30 @@
+.tag {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 2px;
+}
+
+.LOW {
+  background: var(--priority-low);
+}
+
+.MEDIUM {
+  background: var(--priority-medium);
+}
+
+.HIGH {
+  background: var(--priority-high);
+}
+
+.CRITICAL {
+  background: var(--priority-critical);
+}
